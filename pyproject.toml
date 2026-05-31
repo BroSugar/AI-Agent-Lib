@@ -1,0 +1,27 @@
+[project]
+name = "ai-agent-lib"
+version = "0.1.0"
+description = "LangChain + LangGraph Agent 示例库：单 Agent、多 Agent 并行、MCP 远程调用"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain[openai]>=1.3.2",
+    "langchain-aws>=1.5.0",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.2",
+    "langchain-openai>=1.2.2",
+    "langchain-mcp-adapters>=0.2.2",
+    "boto3>=1.43.18",
+    "openai>=2.38.0",
+    "ollama>=0.6.2",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+react-agent = "examples.react_agent:main"
+multi-agent = "examples.multi_agent:main"
+mcp-agent = "examples.mcp_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

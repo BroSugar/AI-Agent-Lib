@@ -1,0 +1,21 @@
+# 忽略虚拟环境
+.venv/
+
+# 环境变量（含密钥）
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+
+# uv
+uv.lock
+
+# OS
+Thumbs.db
+.DS_Store
